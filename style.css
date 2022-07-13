@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Bebas Neue', cursive;
+    background: #dddddd;
+    outline: none;
+}
+
+.contain{
+    background: white;
+    font-size: 80px;
+    margin-top: 3%;
+    height: 80%;
+    display: inline-block;
+    flex-direction: column;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    
+}
+.timer{
+    font-size: 150px;
+    display: inline-block;
+    padding-right : 50px;
+    padding-left : 50px;
+}
+.control{
+    width: 80px;
+    height : 80px;
+    background-color: purple;
+    border-style: none;
+    border-radius : 50%;
+    outline: none;
+}
+.start{
+    background: green;
+}
+.btn{
+    cursor:pointer;
+    border : none;
+    padding : 10px;
+    border-radius: 2px;
+    background: rgb(95, 199, 240);
+    outline: none;
+
+}
+.btn:active{
+    background: grey;
+    border: black;
+}
+.start:hover{
+    width: 85px;
+    height : 85px;
+    background-color: rgb(95, 199, 240);
+    border-style: none;
+    border-radius : 50%;
+}
+.reset:hover{
+    width: 85px;
+    height : 85px;
+    background-color: rgb(95, 199, 240);
+    border-style: none;
+    border-radius : 50%;
+}
+.inputBox{
+    width : 40px;
+    height : 15px;
+    padding: 10px;
+    outline: none;
+}
+
+.inputArea{
+    display: inline;
+    outline: none;
+   
+}
+input[type="number"], input[type="button"]
+{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    opacity: 0.8;
+    outline: none;
+}
+.label{
+    font-size: 30px;
+}
+.edit{
+    width :20px;
+    height: 20px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    outline: none;
+}
+.inputBoxRight{
+    margin-left: 170px;
+}
+.secondLine{
+    display:inline-block;
+}
+p{
+    font-size: 25px;
+}

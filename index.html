@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chess clock</title>
+    <link rel="icon" href="https://img.favpng.com/21/20/10/timer-icon-png-favpng-EqsU36MhYsih9v3uNTQMgQdYL.jpg">
+    <link rel = "stylesheet" href = "./style.css">
+    <link href="https:fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+</head>
+<body align = "center">
+    <div class="contain">
+        <div class = "secondLine">
+            <div class="timer timer1">
+                <span class="time timeMinute1" id = '1'>00</span>
+                <span class="time">:</span>
+                <span class="time timeSecond1">00</span>
+                <span class = "label">
+                    <p>
+                        <span class = "play1">Player1</span>
+                        <button class = "edit" onclick = "name1()">
+                            <span class="material-symbols-outlined">
+                                edit
+                            </span>
+                        </button> 
+                    </p>
+                </span>
+            </div>
+            <select class="turn" value = "1" onclick = "turn()">
+                <option value="1">Player1 first</option>
+                <option value="2">Player2 first</option>
+            </select>
+             <div class="timer timer2">
+                <span class="time timeMinute2">00</span>
+                <span class="time">:</span>
+                <span class="time timeSecond2">00</span>
+                <span class = "label">
+                    <p>
+                        <span class = "play2">Player2</span>
+                        <button class = "edit" onclick="name2()">
+                            <span class="material-symbols-outlined">
+                                edit
+                            </span>
+                        </button>    
+                    </p>
+                </span>    
+            </div>
+        </div>
+        <div class = "other">       
+            <form class = "inputfield">
+                <input type = "number" id="val1" value="0" class="inputBox" >
+                <input type = "number" id="val2" value="0" class="inputBox" >
+                <input type = "button" onclick="change1(val1,val2)" class = "btn" value="Submit">
+                <input type = "number" id="val3" value="0" class="inputBox inputBoxRight" >
+                <input type = "number" id="val4" value="0" class="inputBox" >
+                <input type = "button" onclick="change2(val3,val4)" class = "btn" value="Submit">
+            </form>
+        </div>
+        <div calss="btn , other">
+            <button class="control start" onclick="aud()">
+                <span class = "material-icons">play_arrow</span>
+             </button>
+            <button class="control reset" onclick= "stop()">
+                <span class = "material-icons">timer</span>
+            </button>
+        </div>
+        <p>*Before beginning to hit any keys, Please click somewhere else. :)</p>
+    </div>        
+    
+    <script type = "text/javascript" src = "./Main.js"></script>
+    <script type = "text/javascript" src = "./Edit.js"></script>
+
+</body>
+</html>
